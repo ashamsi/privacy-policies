@@ -1,1 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Support and FAQ for Max Lift — the 1RM calculator and weight converter for lifters." />
+  <title>Max Lift — Support</title>
+  <style>
+    :root {
+      --bg: #0e1116;
+      --surface: #161b22;
+      --surface-2: #1d242e;
+      --border: #2a323d;
+      --text: #e6edf3;
+      --muted: #9aa6b2;
+      --accent: #ff5a1f;
+      --accent-soft: rgba(255, 90, 31, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+
+    header {
+      text-align: center;
+      padding: 72px 20px 48px;
+      background: radial-gradient(120% 120% at 50% 0%, var(--accent-soft) 0%, transparent 60%);
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(255, 90, 31, 0.35);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2.2rem;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      margin: 0 auto;
+      max-width: 520px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin: 48px 0 16px;
+      letter-spacing: -0.3px;
+    }
+
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+
+    .faq-item summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 18px 20px;
+      font-weight: 600;
+      font-size: 1.02rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .faq-item summary::-webkit-details-marker { display: none; }
+
+    .faq-item summary::after {
+      content: "+";
+      color: var(--accent);
+      font-size: 1.4rem;
+      font-weight: 400;
+      transition: transform 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+
+    .faq-item .answer {
+      padding: 0 20px 18px;
+      color: var(--muted);
+    }
+
+    .faq-item .answer p { margin: 0; }
+
+    .contact {
+      margin-top: 56px;
+      text-align: center;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px 28px;
+    }
+
+    .contact h2 { margin-top: 0; }
+
+    .contact p {
+      color: var(--muted);
+      margin: 0 0 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 12px 26px;
+      border-radius: 999px;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn:hover { opacity: 0.92; transform: translateY(-1px); }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      padding: 40px 20px 0;
+    }
+
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">ML</div>
+    <h1>Max Lift</h1>
+    <p>The 1RM calculator and weight converter built for lifters. Here's everything you need to get the most out of the app.</p>
+  </header>
+
+  <main class="wrap">
+    <h2>Frequently Asked Questions</h2>
+
+    <details class="faq-item" open>
+      <summary>What is Max Lift?</summary>
+      <div class="answer">
+        <p>Max Lift is a practical toolkit for weightlifters and strength athletes. It estimates your one-rep max (1RM), converts weights between pounds and kilograms instantly, and supports several trusted strength formulas — all in a clean, focused design.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>How do I estimate my one-rep max?</summary>
+      <div class="answer">
+        <p>Enter the weight you lifted and the number of reps you completed. Max Lift calculates your estimated 1RM in whichever unit you prefer — pounds or kilograms.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Which 1RM formulas are supported?</summary>
+      <div class="answer">
+        <p>Max Lift includes several widely used estimation formulas: Brzycki, Epley, Lander, Lombardi, Mayhew, O'Conner, and Wathan. You can choose which formulas to use from the formula selection screen.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Can I switch between pounds and kilograms?</summary>
+      <div class="answer">
+        <p>Yes. Max Lift converts between lb and kg with live conversion, so there's no mental math at the rack or on the platform.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Why do different formulas give different results?</summary>
+      <div class="answer">
+        <p>Each formula uses a slightly different model based on the research it came from. Estimates are most accurate in lower rep ranges and should be treated as guidance for programming — not a guaranteed lifting number. Pick the formula that best fits your training style.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Is my data stored anywhere?</summary>
+      <div class="answer">
+        <p>Your calculator inputs and formula preferences are saved locally on your device so they're ready the next time you open the app. They aren't shared with us.</p>
+      </div>
+    </details>
+
+    <section class="contact">
+      <h2>Have questions or feedback?</h2>
+      <p>We'd love to hear from you. Reach out anytime and we'll get back to you.</p>
+      <a class="btn" href="mailto:shamsi.artur@gmail.com">Contact us at shamsi.artur@gmail.com</a>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Max Lift. Made for lifters. Spend less time calculating — more time lifting.</p>
+    </footer>
+  </main>
+</body>
+</html>
 
